@@ -1,0 +1,25 @@
+{
+  "books": [
+    {
+      "id": "dd0a",
+      "title": "redux toolkit",
+      "price": "50",
+      "description": "learn",
+      "userName": "Mahmoud"
+    },
+    {
+      "id": "5545",
+      "title": "vue",
+      "price": "50",
+      "description": "learn",
+      "userName": "Mahmoud"
+    },
+    {
+      "id": "ac18",
+      "title": "react",
+      "price": "10",
+      "description": "learn",
+      "userName": "Mahmoud"
+    }
+  ]
+}

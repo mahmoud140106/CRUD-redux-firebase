@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 490px) {
+  .col-6 {
+    width: 80% !important;
+  }
+  .offset-3 {
+    margin-left: 10%;
+  }
+}
