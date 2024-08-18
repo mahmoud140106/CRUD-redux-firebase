@@ -24,7 +24,7 @@ const PostContainer = () => {
   return (
     <Fragment>
       <hr className="my-5" />
-      <div className="row">
+      <div className="row con">
         <div className="col">
           <BooksList
             isLoading={isLoading}
