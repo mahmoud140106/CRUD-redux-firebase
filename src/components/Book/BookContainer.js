@@ -14,7 +14,10 @@ const PostContainer = () => {
   useEffect(() => {
     dispatch(getBooks());
   }, [dispatch]);
-
+  useEffect(() => {
+    // Reset selected book when books are updated (e.g., after insert or delete)
+    setSelectedBook({});
+  }, [books]);
   const getBookId = (id) => {
     const selected = books.find((item) => item.id === id);
     setSelectedBook((prev) => {
@@ -36,7 +39,7 @@ const PostContainer = () => {
           />
         </div>
         <div className="col side-line">
-          <BookInfo info={selectedBook} />
+          <BookInfo info={selectedBook} isLoading={isLoading} />
         </div>
       </div>
     </Fragment>

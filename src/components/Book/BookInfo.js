@@ -1,10 +1,16 @@
 import React, { Fragment } from "react";
 
-const BookInfo = ({ info }) => {
+const BookInfo = ({ info, isLoading }) => {
   return (
-    <Fragment >
+    <Fragment>
       <h2>Book Details</h2>
-      {Object.keys(info).length > 0 ? (
+      {isLoading ? (
+        <div className="d-flex justify-content-center">
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      ) : Object.keys(info).length > 0 ? (
         <div>
           <p className="fw-bold">Title: {info.title}</p>
           <p className="">Description: {info.description}</p>
